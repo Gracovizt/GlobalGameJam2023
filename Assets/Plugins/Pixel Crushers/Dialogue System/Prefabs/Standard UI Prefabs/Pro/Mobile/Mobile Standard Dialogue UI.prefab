@@ -1613,8 +1613,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rightToLeft: 0
   charactersPerSecond: 50
-  audioClip: {fileID: 0}
-  alternateAudioClips: []
+  audioClip: {fileID: 8300000, guid: 0324a3fe400ad944ba08fec5dac26887, type: 3}
+  alternateAudioClips:
+  - {fileID: 8300000, guid: 0324a3fe400ad944ba08fec5dac26887, type: 3}
+  - {fileID: 8300000, guid: cd1cfc844d461484daaad98de5a9fce2, type: 3}
   audioSource: {fileID: 0}
   usePlayOneShot: 0
   interruptAudioClip: 0

@@ -256,7 +256,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: None()
+        value: Delay(5)
+        type: 0
+        typeString: 
+      - title: Response Menu Sequence
+        value: 
         type: 0
         typeString: 
       conversationID: 1
@@ -352,7 +356,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 9
-        y: 101
+        y: 102
         width: 160
         height: 30
     - id: 2
@@ -902,7 +906,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Fade(out, 3, #000000)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 1
@@ -926,7 +930,7 @@ MonoBehaviour:
         height: 30
     entryGroups: []
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasZoom: 0.8200002
   - id: 2
     fields:
     - title: Title
