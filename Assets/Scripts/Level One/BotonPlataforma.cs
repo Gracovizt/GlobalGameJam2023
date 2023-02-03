@@ -19,13 +19,13 @@ public class BotonPlataforma : MonoBehaviour
     {
         if (isBird)
         {
-            plataforma.transform.position = Vector3.MoveTowards(destino.transform.position, destino.transform.position, Time.deltaTime);
+            plataforma.transform.position = Vector3.MoveTowards(plataforma.transform.position, destino.transform.position, Time.deltaTime * 8);
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Bird"))
+        if (collision.gameObject.CompareTag("Bird") && gameObject.CompareTag("Button"))
         {
             isBird = true;
         }

@@ -65,6 +65,15 @@ public class PajaritoMovement : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == 3)
+        {
+            player.GetComponent<PlayerMovement>().pajaritoLanzado = false;
+            Destroy(this.gameObject);
+        }
+    }
+
     private void Flip()
     {
         Vector3 localScale = transform.localScale;
