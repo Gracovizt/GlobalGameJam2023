@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using EZCameraShake;
 
 public class EnemyMovement : MonoBehaviour
 {
@@ -38,6 +39,7 @@ public class EnemyMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Attack"))
         {
+            CameraShaker.Instance.ShakeOnce(.2f, .2f, .1f, .1f);
             Destroy(gameObject);
         }
     }

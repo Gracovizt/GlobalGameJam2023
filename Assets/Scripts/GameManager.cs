@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
+using EZCameraShake;
 
 public class GameManager : MonoBehaviour
 {
@@ -36,7 +37,6 @@ public class GameManager : MonoBehaviour
         {
             StartCoroutine(CDVida());
         }
-        
     }
 
     public void GameOver()
@@ -49,6 +49,7 @@ public class GameManager : MonoBehaviour
     {
         isVida = false;
         health--;
+        CameraShaker.Instance.ShakeOnce(.5f, .5f, .1f, .1f);
         yield return new WaitForSeconds(0.25f);
         isVida = true;
     }
