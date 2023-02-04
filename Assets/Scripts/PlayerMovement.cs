@@ -26,6 +26,8 @@ public class PlayerMovement : MonoBehaviour
     public bool canDoubleJump;
     private bool doubleJump;
 
+    public Animator anim;
+
     private void Start()
     {
         gameManager = GameObject.FindGameObjectWithTag("GameManager");
@@ -34,16 +36,21 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
-        
+        Debug.Log(horizontal);
+        anim.SetFloat("Caminar", Mathf.Abs(horizontal));
+        anim.SetBool("Estoy en el aire", !IsGrounded());
+
         if (!canDoubleJump)
         {
             if (Input.GetButtonDown("Jump") && IsGrounded())
             {
+                anim.SetTrigger("Salto");
                 rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
             }
 
             if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
             {
+                anim.SetTrigger("Salto");
                 rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
             }
         }
@@ -59,6 +66,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 if (IsGrounded() || doubleJump)
                 {
+                    anim.SetTrigger("Salto");
                     rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
 
                     doubleJump = !doubleJump;
@@ -67,6 +75,7 @@ public class PlayerMovement : MonoBehaviour
 
             if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
             {
+                anim.SetTrigger("Salto");
                 rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
             }
         }
@@ -75,7 +84,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Fire2") && IsGrounded() && !pajaritoLanzado)
         {
             pajaritoLanzado = true;
-
+            anim.SetTrigger("Lanzo el pajaro");
             Instantiate(pajaroProyectil, transform.position, Quaternion.identity);
 
         }
@@ -83,6 +92,7 @@ public class PlayerMovement : MonoBehaviour
         else if (Input.GetButtonDown("Fire2") && !IsGrounded() && !pajaritoLanzado)
         {
             pajaritoLanzado = true;
+            anim.SetTrigger("Lanzo el pajaro");
             Instantiate(pajaroProyectil, transform.position, Quaternion.Euler(0f, 0f, 90f));
         }
 
