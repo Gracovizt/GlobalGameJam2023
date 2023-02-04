@@ -7010,8 +7010,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94ef806dd129d514fa6aafd770d03766, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plataforma: {fileID: 1834144970}
-  segundosRojos: 0
+  ramales: {fileID: 1834144970}
+  segundosRojos: 999
   timesUp: 0
 --- !u!1 &508159096 stripped
 GameObject:
@@ -7560,8 +7560,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94ef806dd129d514fa6aafd770d03766, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plataforma: {fileID: 357377876}
-  segundosRojos: 0
+  ramales: {fileID: 357377876}
+  segundosRojos: 999
   timesUp: 0
 --- !u!1001 &1065163857
 PrefabInstance:
@@ -7996,8 +7996,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94ef806dd129d514fa6aafd770d03766, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plataforma: {fileID: 807606266}
-  segundosRojos: 0
+  ramales: {fileID: 807606266}
+  segundosRojos: 999
   timesUp: 0
 --- !u!1 &1375932438
 GameObject:
@@ -8390,8 +8390,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94ef806dd129d514fa6aafd770d03766, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plataforma: {fileID: 1613643949}
-  segundosRojos: 0
+  ramales: {fileID: 1613643949}
+  segundosRojos: 999
   timesUp: 0
 --- !u!1001 &1713091265
 PrefabInstance:

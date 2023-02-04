@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpectralBranch : MonoBehaviour
 {
-    public GameObject plataforma;
+    public GameObject ramales;
     public float segundosRojos;
     public bool timesUp;
     
@@ -13,15 +13,15 @@ public class SpectralBranch : MonoBehaviour
     {
         if (timesUp)
         {
-            plataforma.SetActive(false);
+            ramales.SetActive(false);
         }
     }
 
     public void TimesRunning()
     {
-        if (plataforma.CompareTag("Rojo"))
+        if (ramales.CompareTag("Rojo"))
         {
-            plataforma.SetActive(true);
+            ramales.SetActive(true);
             StartCoroutine(DesaparecePlataforma());
         }
     }
