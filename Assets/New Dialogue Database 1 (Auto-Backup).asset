@@ -3058,7 +3058,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Delay(4)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 4
@@ -3797,7 +3797,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 1473, y: 0}
+    canvasScrollPosition: {x: 396, y: 0}
     canvasZoom: 1
   - id: 5
     fields:
