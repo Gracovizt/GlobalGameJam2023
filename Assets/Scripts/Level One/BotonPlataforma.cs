@@ -18,7 +18,7 @@ public class BotonPlataforma : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gameObject.layer==7)
+        if (gameObject.layer == 7 || gameObject.layer == 8)
         {
             if (isBird)
             {
@@ -33,15 +33,19 @@ public class BotonPlataforma : MonoBehaviour
         {
             isBird = true;
             CameraShaker.Instance.ShakeOnce(.2f, .2f, .1f, .1f);
-            if(gameObject.layer == 8)
+            
+            if(!plataforma.CompareTag("Diana"))
             {
-                gameObject.GetComponent<PlataformasVuelven>().TimesRunning();
-            }
-            else if (gameObject.layer == 9)
-            {
-                gameObject.GetComponent<SpectralBranch>().TimesRunning();
-            }
-                
+                if (gameObject.layer == 8)
+                {
+                    gameObject.GetComponent<PlataformasVuelven>().TimesRunning();
+                }
+
+                else if (gameObject.layer == 9)
+                {
+                    gameObject.GetComponent<SpectralBranch>().TimesRunning();
+                }
+            }    
         }
     }
 }

@@ -60,7 +60,7 @@ public class PajaritoMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == 3 || collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Pared"))
+        if (collision.gameObject.layer == 3 || collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Pared") || collision.gameObject.layer == 7 || collision.gameObject.layer == 8 || collision.gameObject.layer == 9)
         {
             player.GetComponent<PlayerMovement>().pajaritoLanzado = false;
             player.GetComponent<PlayerMovement>().pajaroHombro.SetActive(true);
@@ -70,7 +70,7 @@ public class PajaritoMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.layer == 3 || collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Pared"))
+        if (collision.gameObject.layer == 3 || collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Pared") || collision.gameObject.layer == 7 || collision.gameObject.layer == 8 || collision.gameObject.layer == 9)
         {
             player.GetComponent<PlayerMovement>().pajaritoLanzado = false;
             player.GetComponent<PlayerMovement>().pajaroHombro.SetActive(true);

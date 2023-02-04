@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using EZCameraShake;
 
 public class SpectralBranch : MonoBehaviour
 {
@@ -19,9 +20,10 @@ public class SpectralBranch : MonoBehaviour
 
     public void TimesRunning()
     {
+        ramales.SetActive(true);
+
         if (ramales.CompareTag("Rojo"))
-        {
-            ramales.SetActive(true);
+        { 
             StartCoroutine(DesaparecePlataforma());
         }
     }
@@ -31,5 +33,13 @@ public class SpectralBranch : MonoBehaviour
         timesUp = false;
         yield return new WaitForSeconds(segundosRojos);
         timesUp = true;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Bird") && gameObject.CompareTag("Button"))
+        {
+            TimesRunning();
+        }
     }
 }
