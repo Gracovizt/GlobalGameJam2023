@@ -284,8 +284,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 8
-        y: 39
+        x: 4.875
+        y: 37.4375
         width: 160
         height: 30
     - id: 1
@@ -859,8 +859,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 29
-        y: 468
+        x: 30.639343
+        y: 469.63934
         width: 160
         height: 30
     - id: 9
@@ -1004,8 +1004,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.64000034
+    canvasScrollPosition: {x: 0, y: 149.18024}
+    canvasZoom: 0.6100004
   - id: 2
     fields:
     - title: Title
@@ -1083,7 +1083,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Aeolyn? What are you doing?
+        value: 
         type: 0
         typeString: 
       - title: Parenthetical
@@ -1099,7 +1099,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: None()
+        value: Delay(5)
         type: 0
         typeString: 
       conversationID: 2
@@ -1123,8 +1123,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 20
-        y: 30
+        x: 27
+        y: 45
         width: 160
         height: 30
     - id: 1
@@ -1142,11 +1142,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 1
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -1154,8 +1154,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "What\u2019s it look like? I won\u2019t be using Flametongue anymore,
-          but it deserves to have a good view."
+        value: '  Aeolyn? What are you doing?'
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -1185,7 +1184,7 @@ MonoBehaviour:
       - originConversationID: 2
         originDialogueID: 1
         destinationConversationID: 2
-        destinationDialogueID: 2
+        destinationDialogueID: 14
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -1195,8 +1194,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 20
-        y: 97
+        x: 334.55725
+        y: 73.84993
         width: 160
         height: 30
     - id: 2
@@ -1268,7 +1267,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 9
-        y: 156
+        y: 157.53847
         width: 160
         height: 30
     - id: 3
@@ -1298,7 +1297,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "It\u2019s not just \u2018sitting there\u2019. Take another look.
+        value: "  It\u2019s not just \u2018sitting there\u2019. Take another look.
           It\u2019s already become a part of the land. Its story is over, see?"
         type: 0
         typeString: CustomFieldType_Text
@@ -1370,10 +1369,10 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "It has served me well, but Flametongue\u2019s story has been written
-          in blood. It\u2019s only fitting that it should end by returning the blood
-          of those it has slain to the earth, that it might take root, drink deep
-          of it, and give way to new life."
+        value: "  Flametongue\u2019s story has been written in blood. It\u2019s only
+          fitting that it should end by returning the blood of those it has slain
+          to the earth, that it might take root, drink deep of it, and give way to
+          new life."
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -1444,8 +1443,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "The sword is\u2026 atoning for the actions you committed while wielding
-          it?"
+        value: "  The sword is\u2026 atoning for the actions you committed while
+          wielding it?"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -1485,7 +1484,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 198
+        x: 199.36986
         y: 324
         width: 160
         height: 30
@@ -1557,8 +1556,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 378
-        y: 324
+        x: 401.86365
+        y: 374
         width: 160
         height: 30
     - id: 7
@@ -1588,8 +1587,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "Well, we can\u2019t rest here. We\u2019ve a long way yet to go before
-          we\u2019re home."
+        value: "  Well, we can\u2019t rest here. We\u2019ve a long way yet to go
+          before we\u2019re home."
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -1630,7 +1629,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 282
-        y: 489
+        y: 487.63013
         width: 160
         height: 30
     - id: 8
@@ -1660,7 +1659,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "Yeah\u2026 you\u2019re right"
+        value: "Yeah\u2026 you\u2019re right."
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -1731,7 +1730,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "But seriously, you\u2019re not worried about who might find it?"
+        value: "  But seriously, you\u2019re not worried about who might find it?"
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -1802,9 +1801,9 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Nah. Think about it. In the stories we tell, the weapons of great
+        value: '  Nah. Think about it. In the stories we tell, the weapons of great
           heroes are their own characters, in a sense. They have their own identity,
-          their own myth.
+          their own myth.'
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -1844,8 +1843,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 382
-        y: 668
+        x: 383.36987
+        y: 669.3699
         width: 160
         height: 30
     - id: 11
@@ -1863,11 +1862,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 1
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -1875,8 +1874,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: If Flametongue decides that another worthy soul needs its help to
-          illuminate the dark places of the world, then it shall accompany them.
+        value: '  If Flametongue decides that another worthy soul needs its help
+          to illuminate the dark places of the world, then it shall accompany them.'
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -1916,7 +1915,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 311
+        x: 313.79843
         y: 763
         width: 160
         height: 30
@@ -1935,11 +1934,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 1
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -1947,7 +1946,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: You think the sequel will be as good as the original story?
+        value: '  You think the sequel will be as good as the original story?'
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -2006,11 +2005,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 1
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -2056,9 +2055,81 @@ MonoBehaviour:
         y: 755
         width: 160
         height: 30
+    - id: 14
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: "  What\u2019s it look like? I won\u2019t be using Flametongue anymore,
+          but it deserves to have a good view."
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 2
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 2
+        originDialogueID: 14
+        destinationConversationID: 2
+        destinationDialogueID: 2
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 215.25818
+        y: 127.75159
+        width: 160
+        height: 30
     entryGroups: []
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasZoom: 0.6700003
   - id: 3
     fields:
     - title: Title
