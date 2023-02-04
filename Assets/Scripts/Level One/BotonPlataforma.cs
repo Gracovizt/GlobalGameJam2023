@@ -28,6 +28,7 @@ public class BotonPlataforma : MonoBehaviour
         if (collision.gameObject.CompareTag("Bird") && gameObject.CompareTag("Button"))
         {
             isBird = true;
+            gameObject.GetComponent<PlataformasVuelven>().TimesRunning();
         }
     }
 }

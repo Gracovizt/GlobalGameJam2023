@@ -23,6 +23,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
 
+    public bool canDoubleJump;
+    private bool doubleJump;
+
     private void Start()
     {
         gameManager = GameObject.FindGameObjectWithTag("GameManager");
@@ -31,15 +34,41 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
-
-        if (Input.GetButtonDown("Jump") && IsGrounded())
+        
+        if (!canDoubleJump)
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+            if (Input.GetButtonDown("Jump") && IsGrounded())
+            {
+                rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+            }
+
+            if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+            }
         }
 
-        if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
+        else
         {
-            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+            if (IsGrounded() && !Input.GetButton("Jump"))
+            {
+                doubleJump = false;
+            }
+
+            if (Input.GetButtonDown("Jump"))
+            {
+                if (IsGrounded() || doubleJump)
+                {
+                    rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+
+                    doubleJump = !doubleJump;
+                }
+            }
+
+            if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+            }
         }
 
         // Pajaro
@@ -103,6 +132,14 @@ public class PlayerMovement : MonoBehaviour
             }
             
             gameManager.gameObject.GetComponent<GameManager>().quitarVida();
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.layer == 6)
+        {
+            gameManager.gameObject.GetComponent<GameManager>().GameOver();
         }
     }
 }
