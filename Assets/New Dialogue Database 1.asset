@@ -60,7 +60,7 @@ MonoBehaviour:
   - id: 2
     fields:
     - title: Name
-      value: Mystral
+      value: '  Mystral'
       type: 0
       typeString: CustomFieldType_Text
     - title: Pictures
@@ -82,7 +82,7 @@ MonoBehaviour:
   - id: 3
     fields:
     - title: Name
-      value: Beggar
+      value: '  Beggar'
       type: 0
       typeString: CustomFieldType_Text
     - title: Pictures
@@ -386,7 +386,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "Did you ever have a doubt? After everything we\u2019ve been through
+        value: "  Did you ever have a doubt? After everything we\u2019ve been through
           to get here?"
         type: 0
         typeString: CustomFieldType_Text
@@ -427,7 +427,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 11
+        x: 12.492538
         y: 161
         width: 160
         height: 30
@@ -458,9 +458,9 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "It\u2019s less that, and more\u2026 I still remember you being born,
-          all those years ago. Telling you that I was on a mission to slay the Dark
-          Lord himself when all I had was an old sword and anger issues."
+        value: "  It\u2019s less that, and more\u2026 I still remember you being
+          born, all those years ago. Telling you that I was on a mission to slay
+          the Dark Lord himself when all I had was an old sword and anger issues."
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -531,8 +531,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: I remember being the only person foolish enough to think joining you
-          was a good idea.
+        value: '  I remember being the only person foolish enough to think joining
+          you was a good idea.'
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -643,7 +643,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 17
+        x: 19.739723
         y: 316
         width: 160
         height: 30
@@ -674,7 +674,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "And still I was more intelligent than most earth-walkers we\u2019ve
+        value: " And still I was more intelligent than most earth-walkers we\u2019ve
           met in the Kingdoms."
         type: 0
         typeString: CustomFieldType_Text
@@ -746,7 +746,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Still are. More insufferable, too.
+        value: ' Still are. More insufferable, too.'
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -1004,8 +1004,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 9.58905, y: 4.109558}
-    canvasZoom: 0.73000026
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.64000034
   - id: 2
     fields:
     - title: Title
