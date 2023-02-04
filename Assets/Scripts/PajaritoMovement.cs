@@ -13,6 +13,8 @@ public class PajaritoMovement : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
 
+        player.GetComponent<PlayerMovement>().pajaroHombro.SetActive(false);
+
         if (player.GetComponent<PlayerMovement>().IsGrounded())
         {
             isFlying = false;
@@ -61,6 +63,7 @@ public class PajaritoMovement : MonoBehaviour
         if (collision.gameObject.layer == 3 || collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Pared"))
         {
             player.GetComponent<PlayerMovement>().pajaritoLanzado = false;
+            player.GetComponent<PlayerMovement>().pajaroHombro.SetActive(true);
             Destroy(this.gameObject);
         }
     }
@@ -70,6 +73,7 @@ public class PajaritoMovement : MonoBehaviour
         if (collision.gameObject.layer == 3 || collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Pared"))
         {
             player.GetComponent<PlayerMovement>().pajaritoLanzado = false;
+            player.GetComponent<PlayerMovement>().pajaroHombro.SetActive(true);
             Destroy(this.gameObject);
         }
     }

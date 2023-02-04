@@ -32,7 +32,7 @@ Transform:
   - {fileID: 88368138812846067}
   - {fileID: 88368139716835361}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &88368138812846066
 GameObject:
@@ -207,7 +207,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 88368140115357132}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -234,4 +234,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ida: {fileID: 88368138812846066}
   vuelta: {fileID: 88368139716835360}
+  speed: 0
   yendo: 1

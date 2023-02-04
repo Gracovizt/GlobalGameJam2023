@@ -1,15 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+
 
 public class PlayerMovement : MonoBehaviour
 {
+    private GameObject gameManager;
+
     private float horizontal;
     public float speed = 8f;
     public float jumpingPower = 16f;
     public float angularDrag = 0;
-    //public GameObject pajaroHombro;
+    public float fuerza;
+
+    public GameObject pajaroHombro;
     public GameObject pajaroProyectil;
     public bool pajaritoLanzado = false;
 
@@ -18,6 +22,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
+
+    private void Start()
+    {
+        gameManager = GameObject.FindGameObjectWithTag("GameManager");
+    }
 
     void Update()
     {
@@ -76,8 +85,24 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.layer == 6)
         {
-            Scene scene = SceneManager.GetActiveScene();
-            SceneManager.LoadScene(scene.name);
+            gameManager.gameObject.GetComponent<GameManager>().GameOver();
+        }
+
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Vector3 newVector = collision.gameObject.transform.position - transform.position;
+
+            if (newVector.x < 0)
+            {
+                rb.AddForce(new Vector3(1, 1, 0) * fuerza, ForceMode2D.Impulse);
+            }
+
+            else
+            {
+                rb.AddForce(new Vector3(-1, 1, 0) * fuerza, ForceMode2D.Impulse);
+            }
+            
+            gameManager.gameObject.GetComponent<GameManager>().quitarVida();
         }
     }
 }
