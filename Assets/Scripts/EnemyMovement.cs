@@ -33,4 +33,12 @@ public class EnemyMovement : MonoBehaviour
             yendo = false;
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Attack"))
+        {
+            Destroy(gameObject);
+        }
+    }
 }

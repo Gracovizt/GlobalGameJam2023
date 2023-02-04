@@ -58,7 +58,7 @@ public class PajaritoMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == 3)
+        if (collision.gameObject.layer == 3 || collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Pared"))
         {
             player.GetComponent<PlayerMovement>().pajaritoLanzado = false;
             Destroy(this.gameObject);
@@ -67,7 +67,7 @@ public class PajaritoMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.layer == 3)
+        if (collision.gameObject.layer == 3 || collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Pared"))
         {
             player.GetComponent<PlayerMovement>().pajaritoLanzado = false;
             Destroy(this.gameObject);
