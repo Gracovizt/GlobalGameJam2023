@@ -106,7 +106,7 @@ ScriptedImporter:
       height: 372
     spriteID: d8e778029ccca4b40b8c559a22c716af
     spriteBone:
-    - name: bone_2
+    - name: H_Barba
       guid: 382def08f2a8c574f8e19aea8457916f
       position: {x: 197.57574, y: 345.73486, z: 0}
       rotation: {x: 0, y: 0, z: -0.7156418, w: 0.6984675}
@@ -553,7 +553,7 @@ ScriptedImporter:
       height: 507
     spriteID: 346ba858c43905a42a5a6f8fd4ce3725
     spriteBone:
-    - name: bone_1
+    - name: H_Cabeza
       guid: 4410b8b8148824c489bbb2f0d89bfbd3
       position: {x: 428.70825, y: 71.07916, z: 0}
       rotation: {x: 0, y: 0, z: 0.7100307, w: 0.7041708}
@@ -1110,7 +1110,7 @@ ScriptedImporter:
       height: 179
     spriteID: 401c8640fc1aa844ba431ac05e805de1
     spriteBone:
-    - name: bone_3
+    - name: H_PieD
       guid: c21580575850ae841bec30c697d04993
       position: {x: 60.283875, y: 6.7935104, z: 0}
       rotation: {x: 0, y: 0, z: 0.71244293, w: 0.70173013}
@@ -1447,7 +1447,7 @@ ScriptedImporter:
       height: 187
     spriteID: 2126c34dfecffb14aa6c4a622b155b33
     spriteBone:
-    - name: bone_4
+    - name: H_PieI
       guid: 90ccd6d9b798f764f8aa3f1406a32267
       position: {x: 61.12555, y: 10.634262, z: 0}
       rotation: {x: 0, y: 0, z: 0.712249, w: 0.701927}
@@ -1773,7 +1773,7 @@ ScriptedImporter:
       height: 500
     spriteID: b8a6194595ef5244b8bdfc96bc67ff6c
     spriteBone:
-    - name: bone_5
+    - name: H_Cuerpo
       guid: 1eb7a619ef9fde04cacf2321417f5c95
       position: {x: 351.01782, y: 16.979492, z: 0}
       rotation: {x: 0, y: 0, z: 0.70601475, w: 0.7081971}
@@ -2187,7 +2187,7 @@ ScriptedImporter:
     uvTransform: {x: -171, y: 434}
   characterData:
     bones:
-    - name: bone_1
+    - name: H_Cabeza
       guid: 4410b8b8148824c489bbb2f0d89bfbd3
       position: {x: 544.70825, y: 443.07916, z: 0}
       rotation: {x: 0, y: 0, z: 0.7100307, w: 0.7041708}
@@ -2196,7 +2196,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4278190335
-    - name: bone_2
+    - name: H_Barba
       guid: 382def08f2a8c574f8e19aea8457916f
       position: {x: 571.57574, y: 565.7349, z: 0}
       rotation: {x: 0, y: 0, z: -0.7156418, w: 0.6984675}
@@ -2205,7 +2205,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4278255615
-    - name: bone_3
+    - name: H_PieD
       guid: c21580575850ae841bec30c697d04993
       position: {x: 604.2839, y: 86.79351, z: 0}
       rotation: {x: 0, y: 0, z: 0.71244293, w: 0.70173013}
@@ -2214,7 +2214,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4278255360
-    - name: bone_4
+    - name: H_PieI
       guid: 90ccd6d9b798f764f8aa3f1406a32267
       position: {x: 742.12555, y: 92.63426, z: 0}
       rotation: {x: 0, y: 0, z: 0.712249, w: 0.701927}
@@ -2223,7 +2223,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4294967040
-    - name: bone_5
+    - name: H_Cuerpo
       guid: 1eb7a619ef9fde04cacf2321417f5c95
       position: {x: 526.0178, y: 101.97946, z: 0}
       rotation: {x: 0, y: 0, z: 0.70601475, w: 0.7081971}
