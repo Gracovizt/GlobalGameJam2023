@@ -97,8 +97,8 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
-    portrait: {fileID: 0}
-    spritePortrait: {fileID: 0}
+    portrait: {fileID: 2800000, guid: df66890f04a439344b9a49e4a20cbafc, type: 3}
+    spritePortrait: {fileID: 21300000, guid: df66890f04a439344b9a49e4a20cbafc, type: 3}
     alternatePortraits: []
     spritePortraits: []
   - id: 4
@@ -1213,7 +1213,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: 3
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -2749,8 +2749,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasScrollPosition: {x: 4.3689284, y: 2.5572786}
+    canvasZoom: 1.03
   - id: 4
     fields:
     - title: Title
@@ -3868,8 +3868,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 396, y: 0}
-    canvasZoom: 1
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.97
   - id: 5
     fields:
     - title: Title
@@ -3947,9 +3947,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Well, well, well. Ain\u2019t that Aeolyn? We haven\u2019t seen your
-          face \u2018round these parts in ages. Heard you were supposed to be some
-          kinda hero these days."
+        value: 
         type: 0
         typeString: 
       - title: Parenthetical
@@ -3989,8 +3987,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 20
-        y: 30
+        x: 47
+        y: 135
         width: 160
         height: 30
     - id: 1
@@ -4008,11 +4006,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 1
+        value: 3
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 3
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -4020,8 +4018,9 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "That died with Garga\u2019yol. I\u2019m just Aeolyn again, the farmers\u2019
-          child."
+        value: "Well, well, well. Ain\u2019t that Aeolyn? We haven\u2019t seen your
+          face \u2018round these parts in ages. Heard you were supposed to be some
+          kinda hero these days."
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -4051,7 +4050,7 @@ MonoBehaviour:
       - originConversationID: 5
         originDialogueID: 1
         destinationConversationID: 5
-        destinationDialogueID: 2
+        destinationDialogueID: 8
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -4061,8 +4060,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 201
-        y: 30
+        x: 269
+        y: 126
         width: 160
         height: 30
     - id: 2
@@ -4494,9 +4493,81 @@ MonoBehaviour:
         y: 30
         width: 160
         height: 30
+    - id: 8
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: "That died with Garga\u2019yol. I\u2019m just Aeolyn again, the farmers\u2019
+          child."
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 8
+        destinationConversationID: 5
+        destinationDialogueID: 2
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 189
+        y: 53
+        width: 160
+        height: 30
     entryGroups: []
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasZoom: 0.85000014
   - id: 6
     fields:
     - title: Title
