@@ -106,16 +106,16 @@ ScriptedImporter:
       height: 2856
     spriteID: 12644348ade27bc408592b3bf561ddb9
     spriteBone:
-    - name: bone_2
+    - name: H_Pecho
       guid: 55daa4669009f7643afc40952fcfca7a
       position: {x: 1004.6759, y: 0.00014267564, z: 0}
-      rotation: {x: 0, y: 0, z: -0.4127762, w: 0.91083246}
-      length: 722.3463
+      rotation: {x: 0, y: 0, z: -0.41277635, w: 0.91083246}
+      length: 722.34644
       parentId: 1
       color:
         serializedVersion: 2
         rgba: 4278255615
-    - name: bone_1
+    - name: H_Cuello
       guid: e90ebd9423255da4383acc707fb1b6be
       position: {x: 1950.0369, y: 1758.5, z: 0}
       rotation: {x: 0, y: 0, z: -0.63428515, w: 0.7730992}
@@ -124,7 +124,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4278190335
-    - name: bone_9
+    - name: H_Cabeza
       guid: 657f9910f547cf646a97ed6019537b94
       position: {x: -294.86414, y: 6.7027664, z: 0}
       rotation: {x: 0, y: 0, z: 0.8826533, w: 0.47002468}
@@ -133,56 +133,56 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4286643968
-    - name: bone_3
+    - name: H_Estomago
       guid: 592cc5b24a670a746b0aab347de4207f
-      position: {x: 722.3468, y: -0.00009285033, z: 0}
-      rotation: {x: 0, y: 0, z: -0.55765414, w: 0.8300735}
-      length: 789.4678
+      position: {x: 722.3466, y: 0.00020011295, z: 0}
+      rotation: {x: 0, y: 0, z: -0.55765396, w: 0.83007354}
+      length: 789.46765
       parentId: 0
       color:
         serializedVersion: 2
         rgba: 4278255360
-    - name: bone_4
+    - name: H_Culo
       guid: d8b7a4e92d86f524690241caac38fd44
-      position: {x: 789.4677, y: -0.00007697129, z: 0}
+      position: {x: 789.4676, y: 0.00024321707, z: 0}
       rotation: {x: 0, y: 0, z: 0.23487729, w: 0.97202504}
-      length: 609.7653
+      length: 609.7654
       parentId: 3
       color:
         serializedVersion: 2
         rgba: 4294967040
-    - name: bone_5
+    - name: H_BaseCola
       guid: 7cfd7369d7c648f4bb72c68ca2bb8c24
-      position: {x: 609.7654, y: -0.000046837587, z: 0}
-      rotation: {x: 0, y: 0, z: -0.5183898, w: 0.8551444}
-      length: 315.14725
+      position: {x: 609.76526, y: -0.000056181845, z: 0}
+      rotation: {x: 0, y: 0, z: -0.5183899, w: 0.8551444}
+      length: 315.1473
       parentId: 4
       color:
         serializedVersion: 2
         rgba: 4294901760
-    - name: bone_6
+    - name: H_Cola1
       guid: 3f50ca698179d6f4b96d1a74cce7fd58
-      position: {x: 315.14728, y: -0.00008979475, z: 0}
-      rotation: {x: 0, y: 0, z: -0.39238694, w: 0.9198003}
-      length: 466.46518
+      position: {x: 315.14728, y: -0.00000975281, z: 0}
+      rotation: {x: 0, y: 0, z: -0.3923868, w: 0.9198004}
+      length: 466.46524
       parentId: 5
       color:
         serializedVersion: 2
         rgba: 4294902015
-    - name: bone_7
+    - name: H_Cola2
       guid: 29f28be86db156c45ae29516526fa110
-      position: {x: 466.4653, y: -0.000040496354, z: 0}
-      rotation: {x: 0, y: 0, z: 0.12427943, w: 0.99224734}
-      length: 360.31882
+      position: {x: 466.4652, y: -0.000040458726, z: 0}
+      rotation: {x: 0, y: 0, z: 0.12427937, w: 0.9922473}
+      length: 360.31888
       parentId: 6
       color:
         serializedVersion: 2
         rgba: 4278223103
-    - name: bone_8
+    - name: H_Cola3
       guid: acfb0104b3ba3044a941f17b63900de7
-      position: {x: 360.31888, y: -0.00010720741, z: 0}
-      rotation: {x: 0, y: 0, z: -0.20437418, w: 0.9788929}
-      length: 241.0307
+      position: {x: 360.31885, y: 0.00005524063, z: 0}
+      rotation: {x: 0, y: 0, z: -0.20437421, w: 0.9788929}
+      length: 241.03064
       parentId: 7
       color:
         serializedVersion: 2
@@ -1894,7 +1894,7 @@ ScriptedImporter:
       height: 409
     spriteID: 4b4488f8248dac5448375d869f00559d
     spriteBone:
-    - name: bone_9
+    - name: H_Cabeza
       guid: 657f9910f547cf646a97ed6019537b94
       position: {x: -159.9956, y: 180.9917, z: 0}
       rotation: {x: 0, y: 0, z: 0.38424888, w: 0.9232296}
@@ -1903,7 +1903,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4286643968
-    - name: bone_10
+    - name: H_Mandibula
       guid: e863ea9e81e5e4441a5ab8e481ceaa1d
       position: {x: 165.51184, y: -305.90005, z: 0}
       rotation: {x: 0, y: 0, z: -0.35741717, w: 0.9339448}
@@ -2449,7 +2449,7 @@ ScriptedImporter:
     uvTransform: {x: -2491, y: 745}
   characterData:
     bones:
-    - name: bone_1
+    - name: H_Cuello
       guid: e90ebd9423255da4383acc707fb1b6be
       position: {x: 2386.0369, y: 2013.5, z: 0}
       rotation: {x: 0, y: 0, z: -0.63428515, w: 0.7730992}
@@ -2458,70 +2458,70 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4278190335
-    - name: bone_2
+    - name: H_Pecho
       guid: 55daa4669009f7643afc40952fcfca7a
       position: {x: 1004.67596, y: 0.00015769282, z: 0}
-      rotation: {x: 0, y: 0, z: -0.41277623, w: 0.91083246}
-      length: 722.3463
+      rotation: {x: 0, y: 0, z: -0.41277635, w: 0.91083246}
+      length: 722.3465
       parentId: 0
       color:
         serializedVersion: 2
         rgba: 4278255615
-    - name: bone_3
+    - name: H_Estomago
       guid: 592cc5b24a670a746b0aab347de4207f
-      position: {x: 722.34656, y: -0.00004988196, z: 0}
-      rotation: {x: 0, y: 0, z: -0.55765414, w: 0.8300735}
-      length: 789.4678
+      position: {x: 722.3466, y: 0.00012574816, z: 0}
+      rotation: {x: 0, y: 0, z: -0.55765396, w: 0.83007354}
+      length: 789.46765
       parentId: 1
       color:
         serializedVersion: 2
         rgba: 4278255360
-    - name: bone_4
+    - name: H_Culo
       guid: d8b7a4e92d86f524690241caac38fd44
-      position: {x: 789.4678, y: 0.00007414803, z: 0}
+      position: {x: 789.4675, y: 0.00015934891, z: 0}
       rotation: {x: 0, y: 0, z: 0.2348773, w: 0.97202504}
-      length: 609.7653
+      length: 609.7654
       parentId: 2
       color:
         serializedVersion: 2
         rgba: 4294967040
-    - name: bone_5
+    - name: H_BaseCola
       guid: 7cfd7369d7c648f4bb72c68ca2bb8c24
-      position: {x: 609.7653, y: -0.000023437193, z: 0}
-      rotation: {x: 0, y: 0, z: -0.5183898, w: 0.85514444}
-      length: 315.14722
+      position: {x: 609.76526, y: -0.000047879308, z: 0}
+      rotation: {x: 0, y: 0, z: -0.5183899, w: 0.8551444}
+      length: 315.1473
       parentId: 3
       color:
         serializedVersion: 2
         rgba: 4294901760
-    - name: bone_6
+    - name: H_Cola1
       guid: 3f50ca698179d6f4b96d1a74cce7fd58
-      position: {x: 315.14728, y: -0.0000055472337, z: 0}
-      rotation: {x: 0, y: 0, z: -0.39238697, w: 0.9198003}
-      length: 466.46515
+      position: {x: 315.14722, y: -0.00006230864, z: 0}
+      rotation: {x: 0, y: 0, z: -0.39238682, w: 0.9198003}
+      length: 466.46524
       parentId: 4
       color:
         serializedVersion: 2
         rgba: 4294902015
-    - name: bone_7
+    - name: H_Cola2
       guid: 29f28be86db156c45ae29516526fa110
-      position: {x: 466.4652, y: 0.000063022315, z: 0}
-      rotation: {x: 0, y: 0, z: 0.12427945, w: 0.9922473}
-      length: 360.3188
+      position: {x: 466.46527, y: 0.000008139275, z: 0}
+      rotation: {x: 0, y: 0, z: 0.124279335, w: 0.9922473}
+      length: 360.31888
       parentId: 5
       color:
         serializedVersion: 2
         rgba: 4278223103
-    - name: bone_8
+    - name: H_Cola3
       guid: acfb0104b3ba3044a941f17b63900de7
-      position: {x: 360.31888, y: -0.00005337088, z: 0}
-      rotation: {x: 0, y: 0, z: -0.2043742, w: 0.97889286}
+      position: {x: 360.31888, y: 0.000039529878, z: 0}
+      rotation: {x: 0, y: 0, z: -0.20437415, w: 0.97889286}
       length: 241.03067
       parentId: 6
       color:
         serializedVersion: 2
         rgba: 4278255488
-    - name: bone_9
+    - name: H_Cabeza
       guid: 657f9910f547cf646a97ed6019537b94
       position: {x: -294.86414, y: 6.702793, z: 0}
       rotation: {x: 0, y: -0, z: 0.8826533, w: 0.47002465}
@@ -2530,7 +2530,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4286643968
-    - name: bone_10
+    - name: H_Mandibula
       guid: e863ea9e81e5e4441a5ab8e481ceaa1d
       position: {x: 165.51161, y: -305.89984, z: 0}
       rotation: {x: 0, y: 0, z: -0.3574172, w: 0.9339449}
