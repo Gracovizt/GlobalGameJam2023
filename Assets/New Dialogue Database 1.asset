@@ -2367,7 +2367,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Audio(TakeOff, TakeOff)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 3
@@ -2439,7 +2439,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Audio(TakeOff, Main Camera)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 3
@@ -2820,7 +2820,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 381.39334, y: 0}
+    canvasScrollPosition: {x: 0, y: 0}
     canvasZoom: 1.06
   - id: 4
     fields:
