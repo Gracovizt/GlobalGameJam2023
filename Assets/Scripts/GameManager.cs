@@ -14,10 +14,15 @@ public class GameManager : MonoBehaviour
     public bool isVida;
 
     public Animator anim;
+    public Animator circlel;
+
+    private bool pause;
+    public GameObject pauseObj;
 
     // Start is called before the first frame update
     void Start()
     {
+        pause = false;
         isVida = true;
         healthText.text = "x" + health;
     }
@@ -31,6 +36,23 @@ public class GameManager : MonoBehaviour
         {
             GameOver();
         }
+
+        pauseObj.gameObject.SetActive(pause);
+
+        if (Input.GetButtonDown("Pause"))
+        {
+            if (!pause)
+            {
+                pause = true;
+                Time.timeScale = 0;
+            }
+
+            else
+            {
+                pause = false;
+                Time.timeScale = 1;
+            }
+        }
     }
 
     public void quitarVida()
@@ -43,8 +65,7 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-        Scene scene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(scene.name);
+        StartCoroutine(DieDieDie());
     }
 
     IEnumerator CDVida()
@@ -55,5 +76,14 @@ public class GameManager : MonoBehaviour
         CameraShaker.Instance.ShakeOnce(.5f, .5f, .1f, .1f);
         yield return new WaitForSeconds(0.25f);
         isVida = true;
+    }
+
+    IEnumerator DieDieDie()
+    {
+        circlel.SetTrigger("die");
+        CameraShaker.Instance.ShakeOnce(.5f, .5f, .1f, .1f);
+        yield return new WaitForSeconds(1f);
+        Scene scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
     }
 }

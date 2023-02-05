@@ -379,7 +379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd18c00265e908949a171bfb7e0b5ac0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  segundosAzules: 3.5
+  segundosAzules: 1.75
 --- !u!1001 &179547792
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -490,6 +490,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &179547794 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1968717164, guid: b7a2e53152343f24ba3e4b3537dedb2d, type: 3}
+  m_PrefabInstance: {fileID: 179547792}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &195071235
 GameObject:
   m_ObjectHideFlags: 0
@@ -825,6 +830,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 2892f1cc90f7ce04a80fdbfe6ce7e838, type: 3}
+--- !u!95 &369085868 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6240356863231960275, guid: 2892f1cc90f7ce04a80fdbfe6ce7e838, type: 3}
+  m_PrefabInstance: {fileID: 369085867}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &381791932
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7718,7 +7728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd18c00265e908949a171bfb7e0b5ac0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  segundosAzules: 3.5
+  segundosAzules: 1.75
 --- !u!1 &574945435
 GameObject:
   m_ObjectHideFlags: 0
@@ -7834,6 +7844,11 @@ Transform:
   m_Father: {fileID: 1375932439}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &646460615 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 646460615, guid: b7a2e53152343f24ba3e4b3537dedb2d, type: 3}
+  m_PrefabInstance: {fileID: 179547792}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &732034071
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7843,9 +7858,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1698035196383079868, guid: a13e4365fdfe77a4989002c86f7367bc, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 369085868}
+    - target: {fileID: 1698035196383079868, guid: a13e4365fdfe77a4989002c86f7367bc, type: 3}
       propertyPath: health
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1698035196383079868, guid: a13e4365fdfe77a4989002c86f7367bc, type: 3}
+      propertyPath: circlel
+      value: 
+      objectReference: {fileID: 179547794}
+    - target: {fileID: 1698035196383079868, guid: a13e4365fdfe77a4989002c86f7367bc, type: 3}
+      propertyPath: pauseObj
+      value: 
+      objectReference: {fileID: 646460615}
     - target: {fileID: 1698035196383079868, guid: a13e4365fdfe77a4989002c86f7367bc, type: 3}
       propertyPath: healthText
       value: 
@@ -11278,7 +11305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd18c00265e908949a171bfb7e0b5ac0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  segundosAzules: 3.5
+  segundosAzules: 1.75
 --- !u!1 &2100726157
 GameObject:
   m_ObjectHideFlags: 0

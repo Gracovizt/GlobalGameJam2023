@@ -2543,6 +2543,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &541727976 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1968717164, guid: b7a2e53152343f24ba3e4b3537dedb2d, type: 3}
+  m_PrefabInstance: {fileID: 541727974}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &541727977 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 646460615, guid: b7a2e53152343f24ba3e4b3537dedb2d, type: 3}
+  m_PrefabInstance: {fileID: 541727974}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &558121620
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3781,6 +3791,18 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1698035196383079868, guid: a13e4365fdfe77a4989002c86f7367bc, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 1793773539}
+    - target: {fileID: 1698035196383079868, guid: a13e4365fdfe77a4989002c86f7367bc, type: 3}
+      propertyPath: circlel
+      value: 
+      objectReference: {fileID: 541727976}
+    - target: {fileID: 1698035196383079868, guid: a13e4365fdfe77a4989002c86f7367bc, type: 3}
+      propertyPath: pauseObj
+      value: 
+      objectReference: {fileID: 541727977}
     - target: {fileID: 1698035196383079868, guid: a13e4365fdfe77a4989002c86f7367bc, type: 3}
       propertyPath: healthText
       value: 
