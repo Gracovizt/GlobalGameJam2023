@@ -1213,7 +1213,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 3
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -2033,7 +2033,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: LoadLevel(Level_02)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 2
@@ -2726,7 +2726,78 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
+        value: Delay(3)
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 7
+        destinationConversationID: 3
+        destinationDialogueID: 8
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 587
+        y: 318
+        width: 160
+        height: 30
+    - id: 8
+      fields:
+      - title: Title
         value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: LoadLevel(Level_03)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 3
@@ -2744,13 +2815,13 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 587
+        x: 767
         y: 318
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 4.3689284, y: 2.5572786}
-    canvasZoom: 1.03
+    canvasScrollPosition: {x: 381.39334, y: 0}
+    canvasZoom: 1.06
   - id: 4
     fields:
     - title: Title
@@ -3845,7 +3916,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: LoadLevel(Hobo)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 4
@@ -3868,8 +3939,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.97
+    canvasScrollPosition: {x: 2070.588, y: 0}
+    canvasZoom: 0.85000014
   - id: 5
     fields:
     - title: Title
@@ -4471,7 +4542,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: LoadLevel(OutroVideo)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 5
@@ -4566,7 +4637,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
+    canvasScrollPosition: {x: 749.41156, y: 0}
     canvasZoom: 0.85000014
   - id: 6
     fields:
