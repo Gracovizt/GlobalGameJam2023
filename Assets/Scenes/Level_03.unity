@@ -835,6 +835,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7982538075313905255, guid: 2892f1cc90f7ce04a80fdbfe6ce7e838, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 369085868}
+    - target: {fileID: 7982538075313905255, guid: 2892f1cc90f7ce04a80fdbfe6ce7e838, type: 3}
+      propertyPath: canDoubleJump
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 2892f1cc90f7ce04a80fdbfe6ce7e838, type: 3}
