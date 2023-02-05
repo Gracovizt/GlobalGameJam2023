@@ -77,7 +77,6 @@ public class GameManager : MonoBehaviour
 
     IEnumerator CDVida()
     {
-
             isVida = false;
             sourceOfAudio.PlayOneShot(hit);
             health--;
@@ -85,7 +84,6 @@ public class GameManager : MonoBehaviour
             CameraShaker.Instance.ShakeOnce(.5f, .5f, .1f, .1f);
             yield return new WaitForSeconds(0.25f);
             isVida = true;
-
     }
 
     IEnumerator DieDieDie()

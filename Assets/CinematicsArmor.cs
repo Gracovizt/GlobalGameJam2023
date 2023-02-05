@@ -7,6 +7,7 @@ public class CinematicsArmor : MonoBehaviour
     public GameObject player;
     public Animator anim;
     public Animator fafafade;
+    public GameObject something;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -23,5 +24,8 @@ public class CinematicsArmor : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
         fafafade.SetTrigger("Black");
+        yield return new WaitForSeconds(1.2f);
+        player.gameObject.SetActive(false);
+        something.gameObject.SetActive(true);
     }
 }
