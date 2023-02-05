@@ -19,9 +19,16 @@ public class GameManager : MonoBehaviour
     private bool pause;
     public GameObject pauseObj;
 
+    private bool isDead;
+
+    public AudioSource sourceOfAudio;
+    public AudioClip hit;
+    public AudioClip gameOnBitches;
+
     // Start is called before the first frame update
     void Start()
     {
+        isDead = false;
         pause = false;
         isVida = true;
         healthText.text = "x" + health;
@@ -70,20 +77,28 @@ public class GameManager : MonoBehaviour
 
     IEnumerator CDVida()
     {
-        isVida = false;
-        health--;
-        anim.SetTrigger("Damage");
-        CameraShaker.Instance.ShakeOnce(.5f, .5f, .1f, .1f);
-        yield return new WaitForSeconds(0.25f);
-        isVida = true;
+
+            isVida = false;
+            sourceOfAudio.PlayOneShot(hit);
+            health--;
+            anim.SetTrigger("Damage");
+            CameraShaker.Instance.ShakeOnce(.5f, .5f, .1f, .1f);
+            yield return new WaitForSeconds(0.25f);
+            isVida = true;
+
     }
 
     IEnumerator DieDieDie()
     {
-        circlel.SetTrigger("die");
-        CameraShaker.Instance.ShakeOnce(.5f, .5f, .1f, .1f);
-        yield return new WaitForSeconds(1f);
-        Scene scene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(scene.name);
+        if (!isDead)
+        {
+            isDead = true;
+            circlel.SetTrigger("die");
+            sourceOfAudio.PlayOneShot(gameOnBitches);
+            CameraShaker.Instance.ShakeOnce(.5f, .5f, .1f, .1f);
+            yield return new WaitForSeconds(1f);
+            Scene scene = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(scene.name);
+        }
     }
 }

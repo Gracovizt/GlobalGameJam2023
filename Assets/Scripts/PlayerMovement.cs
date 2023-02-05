@@ -27,6 +27,9 @@ public class PlayerMovement : MonoBehaviour
 
     public Animator anim;
 
+    public AudioSource source;
+    public AudioClip pajaroLoco;
+
     private void Start()
     {
         gameManager = GameObject.FindGameObjectWithTag("GameManager");
@@ -82,6 +85,7 @@ public class PlayerMovement : MonoBehaviour
         // Pajaro
         if (Input.GetButtonDown("Fire2") && IsGrounded() && !pajaritoLanzado)
         {
+            source.PlayOneShot(pajaroLoco);
             pajaritoLanzado = true;
             anim.SetTrigger("Lanzo el pajaro");
             Instantiate(pajaroProyectil, transform.position, Quaternion.identity);
@@ -90,6 +94,7 @@ public class PlayerMovement : MonoBehaviour
 
         else if (Input.GetButtonDown("Fire2") && !IsGrounded() && !pajaritoLanzado)
         {
+            source.PlayOneShot(pajaroLoco);
             pajaritoLanzado = true;
             anim.SetTrigger("Lanzo el pajaro");
             Instantiate(pajaroProyectil, transform.position, Quaternion.Euler(0f, 0f, 90f));
