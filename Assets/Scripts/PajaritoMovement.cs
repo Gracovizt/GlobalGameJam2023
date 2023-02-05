@@ -8,9 +8,11 @@ public class PajaritoMovement : MonoBehaviour
     private bool isLookingForward;
     private bool isFlying;
     public float speed;
+    public Animator anim;
 
     private void Start()
     {
+        anim.SetTrigger("Fly");
         player = GameObject.FindGameObjectWithTag("Player");
 
         player.GetComponent<PlayerMovement>().pajaroHombro.SetActive(false);

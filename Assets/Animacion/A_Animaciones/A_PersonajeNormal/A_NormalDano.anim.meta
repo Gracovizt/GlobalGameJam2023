@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream:Assets/Animacion/A_Animaciones/A_PersonajeNormal/A_NormalDano.anim.meta
 guid: 1d982ccd364a3244eb646185ed90828c
 NativeFormatImporter:
+=======
+guid: 1efef64a713f49445a772fb0c64bcb19
+PrefabImporter:
+>>>>>>> Stashed changes:Assets/Prefabs/Pájaro_GAME_JAM_2023.prefab.meta
   externalObjects: {}
   mainObjectFileID: 7400000
   userData: 
