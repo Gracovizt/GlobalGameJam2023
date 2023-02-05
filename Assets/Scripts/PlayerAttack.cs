@@ -9,6 +9,7 @@ public class PlayerAttack : MonoBehaviour
 
     public bool isAttacking;
 
+    public Animator anim;
 
     private void Start()
     {
@@ -20,6 +21,7 @@ public class PlayerAttack : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire3") && !isAttacking)
         {
+            anim.SetTrigger("Attack");
             StartCoroutine(Attacking());
         }
     }

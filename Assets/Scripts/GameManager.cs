@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
 
     public bool isVida;
 
+    public Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,6 +51,7 @@ public class GameManager : MonoBehaviour
     {
         isVida = false;
         health--;
+        anim.SetTrigger("Damage");
         CameraShaker.Instance.ShakeOnce(.5f, .5f, .1f, .1f);
         yield return new WaitForSeconds(0.25f);
         isVida = true;
